@@ -258,7 +258,7 @@ footer p {
 }
 @media only screen and (max-width: 767px)
 {
-    #navmenu{
+    #nav_menu{
         display: none;
     }
     #mobilemenu{
