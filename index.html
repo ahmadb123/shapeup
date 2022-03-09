@@ -61,11 +61,11 @@
 	<!-- nav_menu - code for the horizontal navigation bar -->
 	<nav id="nav_menu">
 		<ul class="container">
-		
+
 			<li><a href="index/html">HOME </a> </li>
 			<li><a href="cardio/index.html">Cardio</a></li>
 			<li><a href="diet/index.html">Diet</a>
-			
+
 				<ul>
 					<li>
 						<a href="diet/bmi.html">BMI</a>
@@ -90,7 +90,7 @@
 			</li>
 
 		</ul>
-		
+
 	</nav>
 
 	<!-- main - contains the "main" section of the web page - everything between the header and the footer -->
@@ -100,7 +100,7 @@
 		<aside id="leftaside">
 			<!-- nav_list - this code makes up the vertical navigation list in the left column -->
 			<nav id="nav_list">
-				
+
 				<h2>Additional Resources</h2>
 				<ul>
 					<li><a href="https://www.cdc.gov/physicalactivity/basics/pa-health/index.htm"
@@ -114,11 +114,21 @@
 					<li><a href="https://www.medicalnewstoday.com/articles/317314" target="_blank">Yoga workout</a></li>
 				</ul>
 			</nav>
+
+			<article>
+				<img src="images/break.jpg">
+				<img src="images/exercise.jpg">
+				<img src="images/meditate.jpg">
+
+			</article>
+
+
 		</aside>
+
 
 		<!-- this section is the right column of the web page -->
 		<section>
-			
+
 			<p>How many times have you started a new workout routine or diet? And how many times has it failed to give
 				you the results you want? Now, with the help of this site, you can learn about the exercises and diet
 				that work best for you. We offer personalized programs as well as access to several health and dieting
@@ -130,18 +140,26 @@
 
 			<h3>What We Offer</h3>
 
+			<img class="Icon" src="images/weightlifting.png">
+
 			<h3><a href="strength/index.html">Build Strong Muscles</a></h3>
 			<p>Tired of being tired? Strength training can help you manage or lose weight and increase your metabolism
 				to help you burn more calories. It can also increase bone density and reduce the risk of osteoporosis.
 			</p>
 
+			<img class= "Icon" src="images/cyclist.png">
+
 			<h3><a href="cardio/index.html">Get Your Heart Rate Up</a></h3>
 			<p>Want to lose weight? Cardiovascular exercise burns calories and improves overall health. It can reduce
 				belly fat, promote brain growth, prevent stress, and help you focus.</p>
 
+			<img class="Icon" src="images/lotus-position.png">
+
 			<h3><a href="stress/index.html">Relax</a></h3>
 			<p>Stressed out? Stress can weaken the immune system and cause high blood pressure, fatigue, depression,
 				anxiety, and even heart disease. Learn ways to manage and reduce stress.</p>
+
+			<img class="Icon" src="images/vegetables.png">
 
 			<h3><a href="diet/index.html">Eat What's Right For You</a></h3>
 			<p>Are you really what you eat? Lose weight, gain weight, or just feel great! Maintaining a healthy diet is
@@ -177,9 +195,16 @@
 
 	</main>
 
+	<!-- Java Script Code -->
+	<script>
+		window.onload = function () {
+			var d = new Date();
+			document.getElementById("copyright").innerHTML = d.getFullYear();
+		}
+	</script>
 	<!-- footer - the bottom section of the web page, containing the copyright information -->
 	<footer>
-		<p>&copy; 2022 Shape Up!</p>
+		<p>&copy; <span id="copyright"></span> Shape Up!</p>
 	</footer>
 </body>
 
